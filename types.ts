@@ -4,10 +4,17 @@ export enum TaskStatus {
   COMPLETED = 'completed'
 }
 
+export interface TaskItem {
+  id: string;
+  text: string;
+  completed: boolean;
+}
+
 export interface Task {
   id: string;
   title: string;
   description: string;
+  items: TaskItem[];
   assigneeEmail: string;
   senderEmail: string;
   companyName: string;
