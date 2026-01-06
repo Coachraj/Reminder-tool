@@ -9,6 +9,8 @@ export interface Task {
   title: string;
   description: string;
   assigneeEmail: string;
+  senderEmail: string;
+  companyName: string;
   intervalHours: number;
   status: TaskStatus;
   createdAt: number;
@@ -21,6 +23,8 @@ export interface SimulatedEmail {
   taskId: string;
   taskTitle: string;
   assigneeEmail: string;
+  senderEmail: string;
+  companyName: string;
   subject: string;
   content: string;
   sentAt: number;
