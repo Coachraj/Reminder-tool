@@ -1,0 +1,5 @@
+{
+  "name": "Remind Me Persistent Task Tracker",
+  "description": "A high-frequency reminder platform that persistently nudges you via simulated email notifications at set intervals until tasks are completed. Uses Gemini to craft personalized, persuasive reminder content.",
+  "requestFramePermissions": []
+}
