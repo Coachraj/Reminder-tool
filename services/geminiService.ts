@@ -10,7 +10,9 @@ export const generateReminderEmail = async (
   companyName: string,
   reminderCount: number
 ): Promise<{ subject: string; content: string }> => {
-  const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+  const ai = new GoogleGenAI({
+    apiKey: import.meta.env.VITE_GEMINI_API_KEY
+  });
 
   const pendingItemsText = items.filter(i => !i.completed).map(i => i.text).join('\n- ');
   const completedItemsText = items.filter(i => i.completed).map(i => i.text).join('\n- ');
